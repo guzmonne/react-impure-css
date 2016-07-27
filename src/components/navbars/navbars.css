@@ -1,0 +1,88 @@
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.impure-navbar {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.impure-navbar {
+    background: #2d3e50;
+}
+
+.impure-navbar.impure-navbar-inverse {
+    background: #1995dc;
+}
+
+.pure-menu.impure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.impure-navbar .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.impure-navbar .pure-menu-selected a {
+    color: white;
+}
+
+.impure-navbar a {
+    color: #6FBEF3;
+    cursor: pointer;
+}
+
+.impure-navbar.impure-navbar-inverse a {
+    color: whitesmoke;
+}
+
+.impure-navbar.impure-navbar-inverse a:hover {
+    color: white;
+}
+
+.impure-navbar li a:hover,
+.impure-navbar li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 48em) {
+
+    /* We want to give the content area some more padding */
+    .content {
+        padding: 1em;
+    }
+
+    .pure-menu-heading {
+        float: left;
+    }
+
+    .impure-navbar ul.pure-menu-list {
+        padding: 5px;
+    }
+
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .impure-navbar {
+        text-align: left;
+    }
+        .impure-navbar ul {
+            float: left;
+        }
+
+        .impure-navbar.impure-navbar-menu-right ul {
+            float: right;
+        }
+}

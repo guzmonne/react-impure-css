@@ -1,0 +1,13 @@
+.impure-menu-bordered {
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-top: 1px solid grey;
+}
+
+.impure-menu-bordered .pure-menu-item {
+	border-bottom: 1px solid grey;
+}	
+
+.impure-menu-rounded {
+	border-radius: 5px;
+}
