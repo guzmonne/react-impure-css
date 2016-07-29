@@ -55,6 +55,6 @@
     "classnames": "^2.2.5",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "react-pure.css": "^0.1.2"
+    "react-pure.css": "^0.1.7"
   }
 }

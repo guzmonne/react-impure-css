@@ -26,9 +26,9 @@ class ClickOutsideListener extends React.Component {
 
   render () {
     return (
-      <div ref='area'>
+      <span ref='area' class="click-outside-container">
        {this.props.children}
-      </div>
+      </span>
     )
   }
 }

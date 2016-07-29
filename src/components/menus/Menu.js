@@ -4,13 +4,13 @@ import {Menu as PureMenu} from 'react-pure.css/src/components/menus/'
 
 const Menu = (props) => {
 	const {bordered, rounded, className} = props
-	const classNames = classnames(className, {
-		'impure-menu-bordered': !!bordered,
-		'impure-menu-rounded': !!bordered && !!rounded
+	const _props = Object.assign({}, props, {
+		className: classnames(props.className, {
+			'impure-menu-bordered': !!bordered,
+			'impure-menu-rounded': !!bordered && !!rounded
+		})
 	})
-	const _props = Object.assign({}, props)
-	delete _props.className
-	return <PureMenu className={classNames} {..._props} />
+	return <PureMenu {..._props} />
 }
 
 Menu.propTypes = {

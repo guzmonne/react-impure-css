@@ -3,7 +3,7 @@ import Button from 'components/buttons/'
 import ActiveButtons from './active-buttons.js'
 import DisabledButtons from './disabled-buttons.js'
 import SizeButtons from './size-buttons.js'
-import {DropdownButton} from 'components/buttons/'
+import DropdownButtons from './dropdown-buttons.js'
 
 const ButtonsPage = () => 
 	<div id="Buttons">
@@ -15,7 +15,7 @@ const ButtonsPage = () =>
 		<br/>
 		<SizeButtons />
 		<br/>
-		<DropdownButton />
+		<DropdownButtons />
 	</div>
 
 ButtonsPage.propTypes = {}
